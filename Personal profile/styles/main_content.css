@@ -1,0 +1,111 @@
+/* UNIVERSAL */
+body {
+    font-family: "Roboto";
+    background-color: #000000;
+    color: white;
+}
+
+/* POSITIONING */
+body {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'navigation main main'
+        'navigation footer footer';
+    gap: 10px;
+}
+.header_wrapper {grid-area: header;}
+.navigation_wrapper {grid-area: navigation;}
+.main_content_wrapper {grid-area: main;}
+.footer_wrapper {grid-area: footer;}
+
+/* SECTIONAL STYLING */
+/* header */
+header {
+    padding-left: 20%;
+}
+
+header h1 {
+    font-weight: 100;
+}
+
+header h3 {
+    font-style: italic;
+}
+
+/* navigation */
+nav {
+    color: #B7B7B7;
+    background-color: #1E3E62;
+    max-width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav li {
+    list-style: none;
+    margin-left: -15px;
+}
+
+nav a:hover {
+    color: #FF6500;
+}
+
+nav a:visited {
+    color: #9b450c;
+    text-decoration-line: none;
+}
+
+/* articles */
+article {
+    background-color: #0B192C;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+
+article figure {
+    border: 5px #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 80px;
+}
+
+article figure img{
+    width: 80px;
+}
+
+article figure figcaption {
+    background-color: rgba(128, 128, 128, 80%);
+    width: 80px;
+    font-style: italic;
+    text-align: center;
+}
+
+article .about_description {
+    color: rgb(177, 177, 177);
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+article em {
+    color: #FF6500;
+    font-weight: normal;
+}
+
+article h2 {
+    color: #D3EE98;
+}
+
+article dt {
+    font-weight: bold;
+}
+
+article dd {
+    padding-bottom: 50px;
+    margin-left: 7px;
+    color: rgb(177, 177, 177);
+}
